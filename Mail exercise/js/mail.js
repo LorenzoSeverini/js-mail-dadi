@@ -12,27 +12,26 @@ document.getElementById("btn").addEventListener("click", function() {
 
     // get the email from the input
     let email = document.getElementById("email").value;
-    console.log("The email is", + email);
+    console.log("The email is", email);
 
     // list of emails
     let emails = ["email1@gmail.com", "email2@gmail.com", "email3@gmail.com", "email4@gmail.com", "email5@gmail.com", "email6@gmail,com"];
-    console.log("The list of emails is", + emails);
+    console.log("The list of emails is", emails);
     
-    // check if the email is in the list
+    // creat  a loop to check if the email is in the list or not
     let found = false;
     for (let i = 0; i < emails.length; i++) {
-        if (email === emails[i]) {
+        if (email == emails[i]) {
             found = true;
-            break;
-        }
+        } 
     }
-    
+
     // print the result
     if (found) {
-        console.log("Welcome to our website, yor email is in the list", + email);
+        console.log("Welcome to our website, yor email is in the list", email);
         alert("Welcome to our website");
     } else {
-        console.log("Sorry, you are not allowed to enter our website, your email is not in the list", + email);
+        console.log("Sorry, you are not allowed to enter our website, your email is not in the list", email);
         alert("Sorry, you are not allowed to enter our website");
     }
 
